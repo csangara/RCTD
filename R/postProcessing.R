@@ -17,7 +17,7 @@ gather_results <- function(RCTD, results) {
   
   results_df <- data.frame(spot_class = factor(sapply(results,function(X){return(X$spot_class)}),levels=spot_levels),
                            first_type = sapply(results,function(X){return(X$first_type)}),
-                           scond_type = sapply(results,function(X){return(X$second_type)}),
+                           second_type = sapply(results,function(X){return(X$second_type)}),
                            first_class = sapply(results,function(X){return(X$first_class)}),
                            second_class = sapply(results,function(X){return(X$second_class)}),
                            min_score = sapply(results,function(X){return(X$min_score)}),
